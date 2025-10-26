@@ -1,0 +1,15 @@
+* {
+  scrollbar-color: #3f3f46 #18181b;
+}
+
+/* Chrome, Edge, Opera */
+input::-ms-reveal,
+input::-ms-clear,
+input::-webkit-password-toggle-button {
+  display: none;
+}
+
+/* Firefox */
+input::-moz-reveal {
+  display: none;
+}

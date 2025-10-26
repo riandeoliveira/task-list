@@ -1,0 +1,111 @@
+{
+  "account_settings": "Account Settings",
+  "add": "Add",
+  "all": "All",
+  "already_have_an_account": "Already have an account?",
+
+  "cancel": "Cancel",
+  "change_language_to": "Change language to",
+  "complete_task_success": "Task completed successfully!",
+  "completed": "Completed",
+  "confirm": "Confirm",
+  "create_task_success": "Task created successfully!",
+  "create_your_account": "Create your account",
+  "current_password": "Current password",
+
+  "danger_zone_description": "Permanently delete your account and data.",
+  "danger_zone": "Danger Zone",
+  "delete_account": "Delete account",
+  "delete_task_confirmation": "Are you sure you want to delete this task?",
+  "delete_task_success": "Task deleted successfully!",
+  "delete_task": "Delete task",
+  "delete_user_confirmation": "Are you sure you want to delete your account?",
+  "dont_have_an_account": "Don't have an account?",
+
+  "edit_task": "Edit task",
+  "email": "Email",
+  "enter_your_email": "Enter your email",
+  "enter_your_name": "Enter your name",
+  "enter_your_password": "Enter your password",
+  "enter_your_username_or_email": "Enter your username or email",
+  "enter_your_username": "Enter your username",
+
+  "forgot_my_password": "Forgot my password",
+  "forgot_user_password_success": "If an account exists with those details, a password reset link will be sent.",
+
+  "go_back_to_home": "Go back to home",
+  "go_to_account_settings_page": "Go to Account Settings page",
+  "go_to_task_list_page": "Go to Task List page",
+
+  "items_per_page": "Items per page",
+
+  "hide_password": "Hide password",
+
+  "log_in": "Log in",
+
+  "mark_task_as_complete": "Mark task as complete",
+  "mark_task_as_pending": "Mark task as pending",
+  "max_field_length": "The field must have at most {{max}} characters",
+  "meta_description": "",
+  "min_field_length": "The field must have at least {{min}} characters",
+
+  "name": "Name",
+  "new_password_confirmation": "New password confirmation",
+  "new_password": "New password",
+  "new_task": "New Task",
+  "no_tasks_found": "No tasks found.",
+
+  "of": "of",
+
+  "page_not_found": "Page not found",
+  "page": "Page",
+  "password_confirmation": "Password confirmation",
+  "password": "Password",
+  "pending": "Pending",
+  "personal_data_description": "Update your name, username and email.",
+  "personal_data": "Personal Data",
+
+  "recover_password": "Recover password",
+  "recover_your_password": "Recover your password",
+  "register": "Register",
+  "required_field": "Required field",
+  "reset_password": "Reset password",
+  "reset_your_password": "Reset your password",
+
+  "save_changes": "Save changes",
+  "security_description": "Change your password to keep your account secure.",
+  "security": "Security",
+  "session_description": "Sign out from your current session.",
+  "session_expired_warning": "Your session has expired. Please log in again.",
+  "session": "Session",
+  "show_password": "Show password",
+  "sign_in_to_your_account": "Sign in to your account",
+  "sign_in": "Sign in",
+  "sign_out_user_confirmation": "Are you sure you want to sign out of your account?",
+  "sign_out": "Sign out",
+  "sign_up": "Sign up",
+  "status": "Status",
+
+  "the_email_must_be_valid": "The email must be valid",
+  "the_passwords_must_be_equivalent": "The passwords must be equivalent",
+  "the_username_or_email_must_be_valid": "The username or email must be valid",
+  "this_action_cannot_be_undone": "This action cannot be undone.",
+  "task_description": "Task description",
+  "task_edit": "Task edit",
+  "task_list": "Task List",
+  "task_title": "Task title",
+
+  "unable_to_connect_to_the_server": "Unable to connect to the server.",
+  "update_password_success": "Password updated successfully!",
+  "update_password": "Update password",
+  "update_task_success": "Task updated successfully!",
+  "update_user_success": "User updated successfully!",
+  "username_or_email": "Username or email",
+  "username": "Username",
+
+  "valid_username_format": "The field must only contain letters, numbers, underscore, dot, and hyphen",
+
+  "warning": "Warning",
+
+  "your_tasks": "Your Tasks"
+}

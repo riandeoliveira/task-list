@@ -1,0 +1,111 @@
+{
+  "account_settings": "Configurações da Conta",
+  "add": "Adicionar",
+  "all": "Todas",
+  "already_have_an_account": "Já tem uma conta?",
+
+  "cancel": "Cancelar",
+  "change_language_to": "Alterar idioma para",
+  "complete_task_success": "Tarefa concluída com sucesso!",
+  "completed": "Concluídas",
+  "confirm": "Confirmar",
+  "create_task_success": "Tarefa criada com sucesso!",
+  "create_your_account": "Crie sua conta",
+  "current_password": "Senha atual",
+
+  "danger_zone_description": "Exclusão permanente da conta e dados.",
+  "danger_zone": "Área de Risco",
+  "delete_account": "Excluir conta",
+  "delete_task_confirmation": "Você tem certeza que deseja excluir esta tarefa?",
+  "delete_task_success": "Tarefa removida com sucesso!",
+  "delete_task": "Excluir tarefa",
+  "delete_user_confirmation": "Você tem certeza que deseja excluir sua conta?",
+  "dont_have_an_account": "Não tem uma conta?",
+
+  "edit_task": "Editar tarefa",
+  "email": "E-mail",
+  "enter_your_email": "Digite seu e-mail",
+  "enter_your_name": "Digite seu nome",
+  "enter_your_password": "Digite sua senha",
+  "enter_your_username_or_email": "Digite seu nome de usuário ou e-mail",
+  "enter_your_username": "Digite seu nome de usuário",
+
+  "forgot_my_password": "Esqueci minha senha",
+  "forgot_user_password_success": "Se existir uma conta com esses dados, um link para redefinição de senha será enviado.",
+
+  "go_back_to_home": "Voltar para o início",
+  "go_to_account_settings_page": "Vá para a tela de Configurações da Conta",
+  "go_to_task_list_page": "Vá para a tela de Lista de Tarefas",
+
+  "items_per_page": "Itens por página",
+
+  "hide_password": "Ocultar senha",
+
+  "log_in": "Entrar",
+
+  "mark_task_as_complete": "Marcar tarefa como concluída",
+  "mark_task_as_pending": "Marcar tarefa como pendente",
+  "max_field_length": "O campo deve ter no máximo {{max}} caracteres",
+  "meta_description": "",
+  "min_field_length": "O campo deve ter no mínimo {{min}} caracteres",
+
+  "name": "Nome",
+  "new_password_confirmation": "Confirmação de nova senha",
+  "new_password": "Nova senha",
+  "new_task": "Nova Tarefa",
+  "no_tasks_found": "Nenhuma tarefa encontrada.",
+
+  "of": "de",
+
+  "page_not_found": "Página não encontrada",
+  "page": "Página",
+  "password_confirmation": "Confirmação de senha",
+  "password": "Senha",
+  "pending": "Pendentes",
+  "personal_data_description": "Atualize seu nome, nome de usuário e e-mail.",
+  "personal_data": "Dados Pessoais",
+
+  "recover_password": "Recuperar senha",
+  "recover_your_password": "Recupere sua senha",
+  "register": "Cadastrar",
+  "required_field": "Campo obrigatório",
+  "reset_password": "Redefinir senha",
+  "reset_your_password": "Redefina sua senha",
+
+  "save_changes": "Salvar alterações",
+  "security_description": "Altere sua senha para manter sua conta segura.",
+  "security": "Segurança",
+  "session_description": "Encerre sua sessão atual.",
+  "session_expired_warning": "Sua sessão expirou. Por favor, faça login novamente.",
+  "session": "Sessão",
+  "show_password": "Mostrar senha",
+  "sign_in_to_your_account": "Entre na sua conta",
+  "sign_in": "Entre",
+  "sign_out_user_confirmation": "Você tem certeza que deseja sair da sua conta?",
+  "sign_out": "Sair",
+  "sign_up": "Cadastre-se",
+  "status": "Status",
+
+  "the_email_must_be_valid": "O e-mail deve ser válido",
+  "the_passwords_must_be_equivalent": "As senhas devem ser equivalentes",
+  "the_username_or_email_must_be_valid": "O nome de usuário ou e-mail deve ser válido",
+  "this_action_cannot_be_undone": "Esta ação não poderá ser desfeita.",
+  "task_description": "Descrição da tarefa",
+  "task_edit": "Edição de tarefa",
+  "task_list": "Lista de Tarefas",
+  "task_title": "Título da tarefa",
+
+  "unable_to_connect_to_the_server": "Não foi possível conectar ao servidor.",
+  "update_password_success": "Senha atualizada com sucesso!",
+  "update_password": "Atualizar senha",
+  "update_task_success": "Tarefa atualizada com sucesso!",
+  "update_user_success": "Usuário atualizado com sucesso!",
+  "username_or_email": "Nome de usuário ou e-mail",
+  "username": "Nome de usuário",
+
+  "valid_username_format": "O campo deve conter apenas letras, números, sublinhado, ponto e hífen",
+
+  "warning": "Aviso",
+
+  "your_tasks": "Suas Tarefas"
+}

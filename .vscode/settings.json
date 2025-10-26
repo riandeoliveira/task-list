@@ -1,0 +1,55 @@
+{
+  //
+  // Biome (Extension)
+  //
+  "biome.suggestInstallingGlobally": false,
+
+  //
+  // Code Spell Checker (Extension)
+  //
+  "cSpell.language": "en,pt",
+
+  //
+  // Color Highlight (Extension)
+  //
+  "color-highlight.matchWords": true,
+
+  //
+  // Diff Editor
+  //
+  "diffEditor.ignoreTrimWhitespace": true,
+
+  //
+  // Editor
+  //
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit",
+    "source.removeUnusedImports": "explicit"
+  },
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+
+  //
+  // Files
+  //
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/.git": false
+  },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+
+  //
+  // Git
+  //
+  "git.enableSmartCommit": true,
+
+  //
+  // Tailwind CSS IntelliSense (Extension)
+  //
+  "tailwindCSS.colorDecorators": true
+}
