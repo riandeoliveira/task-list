@@ -20,8 +20,9 @@ type RequestArgs<TRequest, TResponse> = {
 export const useHttpRequest = () => {
   const toast = useToast();
   const navigate = useNavigate();
-
   const { language, t } = useI18n();
+
+  const retryingRequests = new Set<string>();
 
   const request = async <TRequest = null, TResponse = null>(
     method: HttpMethods,
@@ -62,15 +63,19 @@ export const useHttpRequest = () => {
 
       const errorResponse = problem.response.data;
 
-      const cannotGetCurrentUser =
-        problem.response.config.method === "get" &&
+      const canRetryRequest =
+        args?.retryToAuth &&
         errorResponse.status === 401 &&
-        errorResponse.instance === "/api/users/me";
+        !retryingRequests.has(url);
 
-      if (args?.retryToAuth && cannotGetCurrentUser) {
+      if (canRetryRequest) {
+        retryingRequests.add(url);
+
         const hasSuccess = await renewRefreshToken();
 
         if (hasSuccess) await request(method, url, args);
+
+        retryingRequests.delete(url);
 
         return;
       }
