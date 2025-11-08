@@ -1,7 +1,8 @@
-@import "./styles/breakpoints.css";
-@import "./styles/browser-fixes.css";
 @import "tailwindcss";
 @import "tw-animate-css";
+
+@import "./styles/breakpoints.css";
+@import "./styles/browser-fixes.css";
 
 body {
   @apply bg-zinc-950 text-zinc-100;

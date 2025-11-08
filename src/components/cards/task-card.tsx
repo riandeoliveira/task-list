@@ -1,6 +1,6 @@
 import { Icon } from "@/assets";
 import { dateHelper } from "@/helpers/date-helper";
-import { useHttpRequest } from "@/hooks/use-http-request";
+import { useHttp } from "@/hooks/use-http";
 import { useI18n } from "@/hooks/use-i18n";
 import { useTask } from "@/hooks/use-task";
 import { useToast } from "@/hooks/use-toast";
@@ -26,7 +26,7 @@ export const TaskCard = ({
   const dialogStore = useDialogStore();
   const taskStore = useTaskStore();
 
-  const { request } = useHttpRequest();
+  const { request } = useHttp();
   const { t } = useI18n();
   const { getTasks } = useTask();
 

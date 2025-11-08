@@ -3,11 +3,12 @@ import camelcaseKeys from "camelcase-keys";
 import { useNavigate } from "react-router";
 import snakecaseKeys from "snakecase-keys";
 import { taskListApi } from "@/api";
-import type { HttpMethods } from "@/types/http-methods";
 import type { ProblemDetails } from "@/types/problem-details";
 import { useAuth } from "./use-auth";
 import { useI18n } from "./use-i18n";
 import { useToast } from "./use-toast";
+
+type HttpMethod = "GET" | "POST" | "PUT" | "DELETE" | "PATCH";
 
 type RequestArgs<TRequest, TResponse> = {
   body?: TRequest;
@@ -17,7 +18,7 @@ type RequestArgs<TRequest, TResponse> = {
   onError?: (error: ProblemDetails) => void;
 };
 
-export const useHttpRequest = () => {
+export const useHttp = () => {
   const toast = useToast();
   const navigate = useNavigate();
   const { language, t } = useI18n();
@@ -25,7 +26,7 @@ export const useHttpRequest = () => {
   const retryingRequests = new Set<string>();
 
   const request = async <TRequest = null, TResponse = null>(
-    method: HttpMethods,
+    method: HttpMethod,
     url: string,
     args?: RequestArgs<TRequest, TResponse>,
   ) => {
@@ -50,7 +51,7 @@ export const useHttpRequest = () => {
       }) as TResponse;
 
       args?.onSuccess?.(data, response.status);
-    } catch (error: unknown) {
+    } catch (error) {
       const problem = error as AxiosError<ProblemDetails>;
 
       if (!problem.response) {

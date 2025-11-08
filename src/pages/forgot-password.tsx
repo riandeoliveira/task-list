@@ -5,7 +5,7 @@ import { Button } from "@/components/shared/button";
 import { Card } from "@/components/shared/card";
 import { Input } from "@/components/shared/input";
 import { emailRegex, usernameRegex } from "@/constants/regex";
-import { useHttpRequest } from "@/hooks/use-http-request";
+import { useHttp } from "@/hooks/use-http";
 import { useI18n } from "@/hooks/use-i18n";
 import { useToast } from "@/hooks/use-toast";
 import { useLoaderStore } from "@/stores/loader-store";
@@ -15,7 +15,7 @@ export const ForgotPasswordPage = () => {
   const loaderStore = useLoaderStore();
 
   const { t } = useI18n();
-  const { request } = useHttpRequest();
+  const { request } = useHttp();
 
   const {
     register,

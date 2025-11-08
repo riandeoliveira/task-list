@@ -3,14 +3,12 @@ import { useNavigate } from "react-router";
 import { z } from "zod";
 import { useUserStore } from "@/stores/user-store";
 import type { User } from "@/types/user";
-import type { useHttpRequest } from "./use-http-request";
+import type { useHttp } from "./use-http";
 import { useI18n } from "./use-i18n";
 import { useLocalStorage } from "./use-local-storage";
 import { useToast } from "./use-toast";
 
-export const useAuth = (
-  request: ReturnType<typeof useHttpRequest>["request"],
-) => {
+export const useAuth = (request: ReturnType<typeof useHttp>["request"]) => {
   const toast = useToast();
   const navigate = useNavigate();
   const userStore = useUserStore();

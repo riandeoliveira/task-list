@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { Button } from "@/components/shared/button";
 import { Input } from "@/components/shared/input";
-import { useHttpRequest } from "@/hooks/use-http-request";
+import { useHttp } from "@/hooks/use-http";
 import { useI18n } from "@/hooks/use-i18n";
 import { useToast } from "@/hooks/use-toast";
 import { useLoaderStore } from "@/stores/loader-store";
@@ -13,7 +13,7 @@ export const CredentialsForm = () => {
   const toast = useToast();
 
   const { t } = useI18n();
-  const { request } = useHttpRequest();
+  const { request } = useHttp();
 
   const {
     register,

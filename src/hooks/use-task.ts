@@ -3,7 +3,7 @@ import { usePaginationStore } from "@/stores/pagination-store";
 import { useTaskStore } from "@/stores/task-store";
 import type { PaginationData } from "@/types/pagination-data";
 import type { Task } from "@/types/task";
-import { useHttpRequest } from "./use-http-request";
+import { useHttp } from "./use-http";
 import { useToast } from "./use-toast";
 
 export const useTask = () => {
@@ -11,7 +11,7 @@ export const useTask = () => {
   const loaderStore = useLoaderStore();
   const taskStore = useTaskStore();
 
-  const { request } = useHttpRequest();
+  const { request } = useHttp();
 
   const getTasks = async () => {
     loaderStore.start();

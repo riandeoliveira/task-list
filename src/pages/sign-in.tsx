@@ -8,7 +8,7 @@ import { Input } from "@/components/shared/input";
 import { Link } from "@/components/shared/link";
 import { emailRegex, usernameRegex } from "@/constants/regex";
 import { useAuth } from "@/hooks/use-auth";
-import { useHttpRequest } from "@/hooks/use-http-request";
+import { useHttp } from "@/hooks/use-http";
 import { useI18n } from "@/hooks/use-i18n";
 import { useToast } from "@/hooks/use-toast";
 import { useLoaderStore } from "@/stores/loader-store";
@@ -19,7 +19,7 @@ export const SignInPage = () => {
   const loaderStore = useLoaderStore();
 
   const { t } = useI18n();
-  const { request } = useHttpRequest();
+  const { request } = useHttp();
   const { setHasUserSession } = useAuth(request);
 
   const {

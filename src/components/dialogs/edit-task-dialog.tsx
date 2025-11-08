@@ -1,7 +1,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { useHttpRequest } from "@/hooks/use-http-request";
+import { useHttp } from "@/hooks/use-http";
 import { useI18n } from "@/hooks/use-i18n";
 import { useTask } from "@/hooks/use-task";
 import { useToast } from "@/hooks/use-toast";
@@ -18,7 +18,7 @@ export const EditTaskDialog = () => {
   const taskStore = useTaskStore();
 
   const { t } = useI18n();
-  const { request } = useHttpRequest();
+  const { request } = useHttp();
   const { getTasks } = useTask();
 
   const {

@@ -6,7 +6,7 @@ import { Card } from "@/components/shared/card";
 import { ConfirmDialog } from "@/components/shared/confirm-dialog";
 import { Tooltip } from "@/components/shared/tooltip";
 import { useAuth } from "@/hooks/use-auth";
-import { useHttpRequest } from "@/hooks/use-http-request";
+import { useHttp } from "@/hooks/use-http";
 import { useI18n } from "@/hooks/use-i18n";
 import { useToast } from "@/hooks/use-toast";
 import { useDialogStore } from "@/stores/dialog-store";
@@ -18,7 +18,7 @@ export const AccountPage = () => {
   const toast = useToast();
 
   const { t } = useI18n();
-  const { request } = useHttpRequest();
+  const { request } = useHttp();
   const { endUserSession } = useAuth(request);
 
   const handleSignOutUser = async () => {

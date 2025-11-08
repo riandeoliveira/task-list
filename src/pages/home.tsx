@@ -12,7 +12,7 @@ import { Input } from "@/components/shared/input";
 import { Pagination } from "@/components/shared/pagination";
 import { Select } from "@/components/shared/select";
 import { Tooltip } from "@/components/shared/tooltip";
-import { useHttpRequest } from "@/hooks/use-http-request";
+import { useHttp } from "@/hooks/use-http";
 import { useI18n } from "@/hooks/use-i18n";
 import { useTask } from "@/hooks/use-task";
 import { useToast } from "@/hooks/use-toast";
@@ -31,7 +31,7 @@ export const HomePage = () => {
   const dialogStore = useDialogStore();
 
   const { t } = useI18n();
-  const { request } = useHttpRequest();
+  const { request } = useHttp();
   const { getTasks } = useTask();
 
   const {
